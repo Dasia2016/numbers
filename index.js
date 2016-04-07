@@ -9,27 +9,27 @@ alert('think of a number between 1 and 63');
 
   var guesses = 6;
 
-var comguess = prompt ('i guessed hi liann '+guess+' is it too High(H) too low (L) correct (C)');
+var comguess = prompt ('Min is ' +min+ 'Max is ' +max+ 'i guessed '+guess+' is it too High(H) too low (L) correct (C)');
   comguess=comguess.toUpperCase(); 
 
 while (guesses!==0){
   
    if (comguess === 'L'){ 
  
-      max = guess;
+      min = guess;
     var guess = (guess+max)/2; 
     //var guess = max;
     
-    var comguess = prompt ('I guessed '+ guess+' is it too High(H) too low (L) correct (C)');
+    var comguess = prompt ( 'Min is ' +min+ 'Max is ' +max+ '. I guessed '+ guess+' is it too High(H) too low (L) correct (C)');
   comguess=comguess.toUpperCase(); 
   
   }
   else if (comguess === 'H'){
-         min = guess;
+         max = guess;
       var  guess = (min+guess)/2;
    //var guess = min;
      
-      var comguess = prompt ('i guessed '+ guess+' is it too High(H) too low (L) correct (C)');
+      var comguess = prompt ('Min is ' +min+ 'Max is ' +max+ 'i guessed '+ guess+' is it too High(H) too low (L) correct (C)');
   comguess=comguess.toUpperCase(); 
   }
   else if (comguess === ''){
